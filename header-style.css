@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid rgb(228, 223, 223);
+    margin: 30px 50px;
+}
+
+.header-left{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    height: 50px;
+    margin-right: 20px;
+}
+
+.directory-heading h2{
+    color: #33bbfd;
+    font-weight: 400;
+    letter-spacing: 0;
+}
+
+.directory-heading h5{
+    font-weight: 400;
+    letter-spacing: 0;
+}
+
+.header-right{
+    display: flex;
+    align-items: baseline;
+    margin-top: 25px;
+}
+
+.header-right h3{
+    font-weight: 400;
+    letter-spacing: 0;
+}
+
+.display-picture{
+    height: 50px;
+    margin-left: 10px;
+}

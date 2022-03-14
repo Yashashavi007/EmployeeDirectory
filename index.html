@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="header-style.css">
+    <link rel="stylesheet" href="main-style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <title>Home</title>
+</head>
+<body>
+    <div class="header">
+        <div class="header-left">
+            <img class="logo" src="Images/saketa-logo.png" alt="saketa-logo">
+            <div class="directory-heading">
+                <h2>Employee Directory</h2>
+                <h5>The Ultimate People Directory Experience</h5>
+            </div>
+        </div>
+        <div class="header-right">
+            <h3><span style="color: #33bbfd;">Welcome,</span> Andrew Philips</h3>
+            <img class="display-picture" src="Images/display-picture.png" alt="display-picture">
+        </div>
+    </div>
+
+    <div class="main-container">
+        <div class="left-container">
+            <ul class="departments">
+                <li><h6>Departments</h6></li>
+                <li><a data-department href="#">IT</a></li>
+                <li><a data-department href="#">Human Resources</a></li>
+                <li><a data-department href="#">MD</a></li>
+                <li><a data-department href="#">Sales</a></li>
+            </ul><br>
+            <ul class="offices">
+                <li><h6>Offices</h6></li>
+                <li><a data-office href="#">Seattle</a></li>
+                <li><a data-office href="#">India</a></li>
+            </ul><br>
+            <ul class="job-titles">
+                <li><h6>Job Titles</h6></li>
+                <li><a data-job-title href="#">SharePoint Practice Head</a></li>
+                <li><a data-job-title href="#">.Net Development Lead</a></li>
+                <li><a data-job-title href="#">Recruiting Expert</a></li>
+                <li><a data-job-title href="#">BI Developer</a></li>
+                <li><a data-job-title href="#">Buisness Analyst</a></li>
+                <ul class="hidden-list">
+                    <li><a data-job-title href="#">Lead Engineer - Dot Net</a></li>
+                    <li><a data-job-title href="#">.Net Development Lead</a></li>
+                    <li><a data-job-title href="#">Network Engineer</a></li>
+                    <li><a data-job-title href="#">Operations Manager</a></li>
+                    <li><a data-job-title href="#">Product Manager</a></li>
+                    <li><a data-job-title href="#">Talent Magnet Jr.</a></li>
+                    <li><a data-job-title href="#">UI Designer</a></li>
+                </ul>
+                <li><a id="view-more" href="#">view more</a></li>
+            </ul>
+            
+        </div>
+        <div class="right-container">
+            <div class="alphabet-buttons">
+                <button id="contact" type="button" class="btn btn-primary"><img src="Images/contact.png" alt="contact"></button>
+                <button data-alphabet type="button" class="btn btn-primary" on>A</button>
+                <button data-alphabet type="button" class="btn btn-primary">B</button>
+                <button data-alphabet  type="button" class="btn btn-primary">C</button>
+                <button data-alphabet type="button" class="btn btn-primary">D</button>
+                <button data-alphabet type="button" class="btn btn-primary">E</button>
+                <button data-alphabet type="button" class="btn btn-primary">F</button>
+                <button data-alphabet type="button" class="btn btn-primary">G</button>
+                <button data-alphabet type="button" class="btn btn-primary">H</button>
+                <button data-alphabet type="button" class="btn btn-primary">I</button>
+                <button data-alphabet type="button" class="btn btn-primary">J</button>
+                <button data-alphabet type="button" class="btn btn-primary">K</button>
+                <button data-alphabet type="button" class="btn btn-primary">L</button>
+                <button data-alphabet type="button" class="btn btn-primary">M</button>
+                <button data-alphabet type="button" class="btn btn-primary">N</button>
+                <button data-alphabet type="button" class="btn btn-primary">O</button>
+                <button data-alphabet type="button" class="btn btn-primary">P</button>
+                <button data-alphabet type="button" class="btn btn-primary">Q</button>
+                <button data-alphabet type="button" class="btn btn-primary">R</button>
+                <button data-alphabet type="button" class="btn btn-primary">S</button>
+                <button data-alphabet type="button" class="btn btn-primary">T</button>
+                <button data-alphabet type="button" class="btn btn-primary">U</button>
+                <button data-alphabet type="button" class="btn btn-primary">V</button>
+                <button data-alphabet type="button" class="btn btn-primary">W</button>
+                <button data-alphabet type="button" class="btn btn-primary">X</button>
+                <button data-alphabet type="button" class="btn btn-primary">Y</button>
+                <button data-alphabet type="button" class="btn btn-primary">Z</button>
+            </div>
+
+            <div class="search-bar">
+                <label for="text"><b>Search</b></label>
+                <div class="search-bar-input">
+                    <input data-search-field type="search" name="search-field" placeholder="Enter any keyword">
+                    <img id="search-icon" src="Images/search.png" alt="search-icon">
+                </div>
+                <button data-clear-filter id="clear-button" type="button" class="btn btn-primary">Clear</button>
+                <label for="dropdown"><b>Filter by</b></label>
+                <select id="dropdown-button">
+                    <option value="option1">Preffered Name</option>
+                    <option value="option2">Phone Number</option>
+                    <option value="option3">Skype ID</option>
+                </select>
+
+                <button id="add-button" class="btn btn-primary"><b>Add Employee</b></button>
+            </div>
+
+            <p class="note"><b>Note:</b> Please use the advanced filter options to refine your results.</p>
+
+            <div class="employee-wall">
+                <!-- <div class="employee-account">
+                    <div class="employee-dp">
+                        <img src="Images/display-picture.png" alt="Employee-DP">
+                    </div>
+                    <div class="employee-details">
+                        <h6>Name</h6>
+                        <p class="post">Post</p>
+                        <p class="department">Department</p>
+                        <div class="icon">
+                            <img src="Images/phone.png" alt="phone-icon">
+                            <img src="Images/message.png" alt="message-icon">
+                            <img src="Images/chat.png" alt="chat-icon">
+                            <img src="Images/star.png" alt="star-icon">
+                            <img src="Images/heart.png" alt="heart-icon">
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Form Section -->
+    <div class="employee-form">
+        <div class="employee-fields">
+            <div class="close">+</div>
+            <h2>Fill new employee details!!</h2>
+            <form action="" id="add-employee-form">
+                <label for="firstname">First Name : </label>
+                <input type="text" id="firstname" style="text-transform: capitalize" required><br>
+                <label for="lastname">Last Name : </label>
+                <input type="text" id="lastname" style="text-transform: capitalize" required><br>
+                <label for="email">E-mail : </label>
+                <input type="email" id="email" required><br>
+                <label for="post">Job Title : </label>
+                <select id="post" required>
+                    <option value="bi-developer">BI Developer</option>
+                    <option value="business-analyst">Business Analyst</option>
+                    <option value="lead-engineer-dot-net">Lead Engineer - Dot Net</option>
+                    <option value="dot-net-development-lead">.Net Development Lead</option>
+                    <option value="network-engineer">Network Engineer</option>
+                    <option value="operations-manager">Operations Manager</option>
+                    <option value="product-manager">Product Manager</option>
+                    <option value="recruiting-expert">Recruiting Expert</option>
+                    <option value="sharepoint-practice-head">SharePoint Practice Head</option>
+                    <option value="software-engineer">Software Engineer</option>
+                    <option value="talent-magnet-jr">Talent Magnet Jr.</option>
+                    <option value="ui-designer">UI Designer</option>
+                </select><br>
+                <label for="office">Office Location : </label>
+                <input class="office" name="office" type="radio" value="India"> India
+                <input class="office" name="office" type="radio" value="Seattle"> Seattle
+                <br>
+
+                <label for="department">Department : </label>
+                <select id="department" required>
+                    <option value="it-department" id="IT">IT Department</option>
+                    <option value="hr-department" id="HR">Human Resources</option>
+                    <option value="md" id="MD">MD</option>
+                    <option value="sales" id="Sales">Sales</option>
+                </select><br>
+                <label for="phone">Phone Number : </label>
+                <input type="number" id="phone" required><br>
+                <label for="skype">Skype ID : </label>
+                <input type="text" id="skype"><br><br>
+
+                <button type="submit" id="submit-button">Submit</button>
+            </form>
+        </div>
+
+        <div class="success-message">
+            <h3>Submitted Successfully!!</h3>
+        </div>
+    </div>
+
+    <!-- Employee deatils window -->
+    <div class="employee-window">
+        <div class="display-window-outside">
+            <div class="display-window-inside">
+                <div class="close-2">+</div>
+                <h2></h2>
+                <form id="display-employee-form">
+                    <label for="firstName">First Name : </label>
+                    <input type="text" name="firstName" disabled><br>
+                    <label for="lastName">Last Name : </label>
+                    <input type="text" name="lastName" disabled><br>
+                    <label for="prefferedName">preffered Name : </label>
+                    <input type="text" name="prefferedName" disabled><br>
+                    <label for="email">E-mail : </label>
+                    <input type="email" name="email" disabled><br>
+                    <label for="post">Post : </label>
+                    <input type="text" name="post" disabled><br>
+                    <label for="office">Office Location : </label>
+                    <input type="text" name="officeLocation" disabled><br>
+                    <label for="department">Department : </label>
+                    <input type="text" name="department" disabled><br>
+                    <label for="phoneNumber">Phone Number : </label>
+                    <input type="number" name="phoneNumber" disabled><br>
+                    <label for="skypeID">Skype ID : </label>
+                    <input type="text" name="skypeID" disabled><br><br>
+                    
+                    <button type="submit" class="edit-button">Edit</button>
+                    <button type="submit" class="confirm-button">Confirm</button>
+                    
+                </form>
+            </div>
+        </div> 
+    </div>
+    
+    <!-- JavaScript Section -->
+    <script type="module" src="./startup.js" defer></script>
+    <script type="module" src="./add-employee.js" defer></script>
+    <script type="module" src="./wallFunction.js" defer></script>
+    <script type="module" src="./filters.js" defer></script>
+    <!-- <script src="./displaycard.js" defer></script> -->
+</body>
+</html>
