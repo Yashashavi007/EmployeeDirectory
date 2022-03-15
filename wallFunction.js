@@ -93,10 +93,6 @@ export function displayAll(){
     displayOfficeFilter()
 }
 
-// displayAll()
-
-
-
 //Clear filter
 clearButton.addEventListener('click', () => {
     document.querySelector("[data-search-field]").value = ''

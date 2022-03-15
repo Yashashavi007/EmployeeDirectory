@@ -1,8 +1,9 @@
 import { displayAll } from './wallFunction.js'
 
 export default class Employee{
-    constructor(firstName, lastName, email, post, office, department, phoneNumber, skypeID)
+    constructor(id, firstName, lastName, email, post, office, department, phoneNumber, skypeID)
     {
+        this.id = id
         this.firstName = firstName.toUpperCase()
         this.lastName = lastName.toUpperCase()
         this.prefferedName = this.firstName+" "+this.lastName
@@ -18,11 +19,17 @@ export default class Employee{
 function setLocalStorage(){
     if(localStorage.length === 0)
     {
+        let empID = 1
+        localStorage.setItem("empIdCount", JSON.stringify(empID))      
+        
+    }  
+    if(localStorage.length === 1)
+    {
         let employees = []
         localStorage.setItem("employees", JSON.stringify(employees))      
         
     }    
-    if(localStorage.length === 1)
+    if(localStorage.length === 2)
     {
         let departments = {
             "IT Department" : 0,
@@ -32,7 +39,7 @@ function setLocalStorage(){
         }
         localStorage.setItem("departments", JSON.stringify(departments))
     }
-    if(localStorage.length === 2)
+    if(localStorage.length === 3)
     {
         let offices = {
             "India" : 0,

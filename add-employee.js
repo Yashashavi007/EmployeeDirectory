@@ -10,7 +10,6 @@ const addEmployeeForm = document.querySelector('#add-employee-form')
 const successMessage = document.querySelector(".success-message")
 export const employeeWall = document.querySelector(".employee-wall")
 
-
 export function addEmployeeHTML(employee){
     let employeeCardHTML = `
                 <div class="employee-account">
@@ -50,9 +49,14 @@ function addEmployee(){
     let phoneNumber = document.getElementById('phone').value
     let skypeID = document.getElementById('skype').value
 
+    let empId = JSON.parse(localStorage.empIdCount)
+
     let tempEmployees = JSON.parse(localStorage.employees)
-    let employee = new Employee(firstName, lastName, email, post, office, department, phoneNumber, skypeID)
+    let employee = new Employee(empId, firstName, lastName, email, post, office, department, phoneNumber, skypeID)
     tempEmployees.push(employee)
+
+    empId += 1
+    localStorage.setItem('empIdCount', JSON.stringify(empId))
     localStorage.setItem('employees', JSON.stringify(tempEmployees))
 
     let tempDepartment = JSON.parse(localStorage.departments)
@@ -82,5 +86,6 @@ submitButton.addEventListener('click', (event) => {
 closeButton.addEventListener('click', () => {
     employeeForm.style.display = "none"
     successMessage.style.display = "none"
+    location.reload()
 })
 
