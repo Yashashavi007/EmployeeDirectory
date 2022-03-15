@@ -47,6 +47,10 @@ function getEmployee(name){
 function makeUneditable(){
     inputFields.forEach(input => {
         input.style.border = "0"
+        if((input.name === 'post' || input.name === 'officeLocation' || input.name === 'department') && input.disabled === false)
+        {
+            input.disabled = true
+        }
     })
 
     fname.disabled = true
@@ -115,7 +119,7 @@ function makeEditable(){
         {
             input.style.border = "2px solid black"
         }
-        else
+        else if(input.name === 'post' || input.name === 'officeLocation' || input.name === 'department')
         {
             input.style.border = "2px solid red"
         }
@@ -123,7 +127,6 @@ function makeEditable(){
 }
 
 function showDetails(empName){
-    //Adds employee details to the display window
     let employee = getEmployee(empName)
     let empId = getId(empName)
 
