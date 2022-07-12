@@ -30,7 +30,7 @@ export function addEmployeeHTML(employee){
                     </div>
                 </div>`
 
-    employeeWall.innerHTML += employeeCardHTML    
+    employeeWall.innerHTML +=  employeeCardHTML    
 }
 
 function addEmployee(){
